@@ -53,9 +53,8 @@ class _ProductDetailPageState extends State<ProductDetailPage>
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => QRCodePage(
-                                        GenerateQRCode(
-                                            widget.subscription["id"],
-                                            GetStorage().read("userID")))),
+                                        widget.subscription["id"],
+                                        GetStorage().read("userID"))),
                               )
                             },
                         child: Text("QR Code"))),
