@@ -74,7 +74,6 @@ query GetBusinessInfo {
   type(where: {id: {_eq: $ID}}) {
     price
     image_url
-    pricePlan
     serviceType
     position
     name
